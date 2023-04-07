@@ -3,10 +3,16 @@ import "./CounterControls.css";
 
 const CounterControls = (props) => {
   return (
-    <div>
-      <button onClick={props.increment}>Increase</button>
-      <button onClick={props.decrement}>Decrease</button>
-      <button onClick={props.clear}>Clear</button>
+    <div classList="button-container">
+      <button classList="buttons" onClick={props.increment}>
+        Increase
+      </button>
+      <button classList="buttons" onClick={props.decrement}>
+        Decrease
+      </button>
+      <button classList="buttons" onClick={props.clear}>
+        Clear
+      </button>
     </div>
   );
 };
